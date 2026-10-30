@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"liushuiled\startup_stm32f411xe.o"
+"liushuiled\main.o"
+"liushuiled\stm32f4xx_it.o"
+"liushuiled\stm32f4xx_hal_msp.o"
+"liushuiled\stm32f4xx_hal_tim.o"
+"liushuiled\stm32f4xx_hal_tim_ex.o"
+"liushuiled\stm32f4xx_hal_uart.o"
+"liushuiled\stm32f4xx_hal_rcc.o"
+"liushuiled\stm32f4xx_hal_rcc_ex.o"
+"liushuiled\stm32f4xx_hal_flash.o"
+"liushuiled\stm32f4xx_hal_flash_ex.o"
+"liushuiled\stm32f4xx_hal_flash_ramfunc.o"
+"liushuiled\stm32f4xx_hal_gpio.o"
+"liushuiled\stm32f4xx_hal_dma_ex.o"
+"liushuiled\stm32f4xx_hal_dma.o"
+"liushuiled\stm32f4xx_hal_pwr.o"
+"liushuiled\stm32f4xx_hal_pwr_ex.o"
+"liushuiled\stm32f4xx_hal_cortex.o"
+"liushuiled\stm32f4xx_hal.o"
+"liushuiled\stm32f4xx_hal_exti.o"
+"liushuiled\system_stm32f4xx.o"
+--strict --scatter "LiuShuiLED\LiuShuiLED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LiuShuiLED.map" -o LiuShuiLED\LiuShuiLED.axf

@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"anjianjiancha\startup_stm32f411xe.o"
+"anjianjiancha\main.o"
+"anjianjiancha\stm32f4xx_it.o"
+"anjianjiancha\stm32f4xx_hal_msp.o"
+"anjianjiancha\stm32f4xx_hal_tim.o"
+"anjianjiancha\stm32f4xx_hal_tim_ex.o"
+"anjianjiancha\stm32f4xx_hal_rcc.o"
+"anjianjiancha\stm32f4xx_hal_rcc_ex.o"
+"anjianjiancha\stm32f4xx_hal_flash.o"
+"anjianjiancha\stm32f4xx_hal_flash_ex.o"
+"anjianjiancha\stm32f4xx_hal_flash_ramfunc.o"
+"anjianjiancha\stm32f4xx_hal_gpio.o"
+"anjianjiancha\stm32f4xx_hal_dma_ex.o"
+"anjianjiancha\stm32f4xx_hal_dma.o"
+"anjianjiancha\stm32f4xx_hal_pwr.o"
+"anjianjiancha\stm32f4xx_hal_pwr_ex.o"
+"anjianjiancha\stm32f4xx_hal_cortex.o"
+"anjianjiancha\stm32f4xx_hal.o"
+"anjianjiancha\stm32f4xx_hal_exti.o"
+"anjianjiancha\system_stm32f4xx.o"
+--strict --scatter "AnJianJianCha\AnJianJianCha.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AnJianJianCha.map" -o AnJianJianCha\AnJianJianCha.axf

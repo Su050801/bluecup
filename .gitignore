@@ -1,0 +1,21 @@
+# 编译产物
+build/
+output/
+*.elf
+*.bin
+*.hex
+*.o
+*.d
+*.map
+*.lst
+
+# IDE相关
+.vscode/
+.idea/
+*.bak
+*.uvoptx
+*.uvguix.*
+
+# 系统缓存
+.DS_Store
+Thumbs.db
